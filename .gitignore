@@ -11,6 +11,8 @@
 
 # next.js
 /.next/
+/.swc/
+/.vscode/
 /out/
 
 # production
@@ -35,3 +37,7 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 .env
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
