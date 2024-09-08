@@ -1,7 +1,7 @@
 import { test, expect } from "@playwright/test";
 
 test("Course link functionality", async ({ page }) => {
-  await page.goto("http://localhost:3000/");
+  await page.goto("/");
   await page.getByPlaceholder("Learning Next.js").fill("Learn JS");
   await page
     .getByPlaceholder("Some information about your")
