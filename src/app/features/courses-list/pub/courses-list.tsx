@@ -19,7 +19,6 @@ const CourseList = async ({ pathToRevalidate }: Props) => {
 
   return (
     <div>
-      <h3>Courses with title: </h3>
       {coursesList.map((course) => (
         <CourseItem
           key={course.id}
