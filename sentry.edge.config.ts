@@ -9,7 +9,9 @@ Sentry.init({
   dsn: process.env.NEXT_PUBLIC_SENTRY_DSN,
   environment: process.env.NEXT_PUBLIC_SENTRY_ENVIRONMENT,
 
-  enabled: process.env.NODE_ENV !== "development",
+  enabled:
+    process.env.NEXT_PUBLIC_SENTRY_ENVIRONMENT === "production" ||
+    process.env.NEXT_PUBLIC_SENTRY_ENVIRONMENT === "staging",
 
   // Define how likely traces are sampled. Adjust this value in production, or use tracesSampler for greater control.
   tracesSampleRate: 1,
