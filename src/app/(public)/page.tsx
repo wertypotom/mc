@@ -1,7 +1,7 @@
+import { CourseList } from "@/features/courses-list/pub/courses-list";
+import { CreateCourseForm } from "@/features/courses-list/pub/create-course-form";
 import { db } from "@/shared/lib/db";
 import { Button } from "@/shared/ui/button";
-import { CreateCourseForm } from "./features/courses-list/pub/create-course-form";
-import { CourseList } from "./features/courses-list/pub/courses-list";
 
 async function main() {
   console.log("Hello world!");
